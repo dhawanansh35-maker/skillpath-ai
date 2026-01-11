@@ -4,6 +4,7 @@ import { auth, db } from "./firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import Link from "next/link";
+import SavedRoadmaps from "../components/SavedRoadmaps";
 
 export default function Home() {
   const [interest, setInterest] = useState("");
@@ -11,7 +12,7 @@ export default function Home() {
   const [user, setUser] = useState<any>(null);
   const [loading, setLoading] = useState(false);
 
-  // Observer: Check user status
+  // Observer: Check user status on mount
   useEffect(() => {
     if (typeof window !== "undefined") {
       const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -23,7 +24,7 @@ export default function Home() {
 
   const handleLogout = async () => {
     await signOut(auth);
-    setData(null); // Clear data on logout for security
+    setData(null); // Clear active data on logout for security
   };
 
   const generatePath = async () => {
@@ -43,7 +44,7 @@ export default function Home() {
       const json = await res.json();
       setData(json);
 
-      // Save to Firestore if logged in
+      // Save to Firestore if user is logged in
       if (user) {
         await setDoc(doc(db, "roadmaps", user.uid), {
           uid: user.uid,
@@ -175,6 +176,15 @@ export default function Home() {
             </section>
           </div>
         )}
+
+        {/* ================= SAVED HISTORY SECTION ================= */}
+        {/* Only show history if user is logged in and not currently looking at a new result */}
+        {user && !data && (
+          <div className="mt-12">
+            <SavedRoadmaps userId={user.uid} />
+          </div>
+        )}
+
       </div>
     </main>
   );
