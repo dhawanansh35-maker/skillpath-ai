@@ -34,7 +34,7 @@ SkillPath AI provides:
 ---
 
 ## 🌐 Live Demo
-👉 (Add your Vercel live link here)
+https://skillpath-ai-drab.vercel.app/
 
 ---
 
