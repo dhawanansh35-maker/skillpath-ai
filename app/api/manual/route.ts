@@ -8,154 +8,262 @@ export async function POST(req: Request) {
       "Web Development": {
         "Beginner": {
           role: "Junior Frontend Developer",
-          roadmap: ["HTML & CSS Fundamentals", "JavaScript Basics (Variables, Loops)", "Introduction to Git & GitHub"],
-          resources: [{ title: "freeCodeCamp Responsive Web Design", url: "https://www.freecodecamp.org" }, { title: "MDN Web Docs", url: "https://developer.mozilla.org" }, { title: "The Odin Project Foundations", url: "https://www.theodinproject.com" }]
+          roadmap: ["HTML5 & CSS3 Fundamentals", "JavaScript Basics (DOM, ES6)", "Git & GitHub Basics"],
+          resources: [
+            { title: "freeCodeCamp Responsive Web Design", url: "https://www.freecodecamp.org/learn/2022/responsive-web-design/" },
+            { title: "JavaScript.info - The Modern Tutorial", url: "https://javascript.info/" },
+            { title: "The Odin Project Foundations", url: "https://www.theodinproject.com/paths/foundations/courses/foundations" }
+          ]
         },
         "Intermediate": {
           role: "Frontend React Engineer",
-          roadmap: ["React Hooks, Props & State", "Tailwind CSS Layouts", "Consuming REST APIs with Fetch/Axios"],
-          resources: [{ title: "React.dev Official Docs", url: "https://react.dev" }, { title: "Scrimba Learn React", url: "https://scrimba.com/learn/learnreact" }, { title: "Full Stack Open", url: "https://fullstackopen.com/en/" }]
+          roadmap: ["React Hooks & Router", "Tailwind CSS & Shadcn UI", "State Management (Zustand/Redux)"],
+          resources: [
+            { title: "React.dev Official Docs", url: "https://react.dev/" },
+            { title: "Scrimba - Learn React for Free", url: "https://scrimba.com/learn/learnreact" },
+            { title: "Tailwind CSS Components Guide", url: "https://tailwindcss.com/docs/installation" }
+          ]
         },
         "Advanced": {
-          role: "Senior Full-stack Architect",
-          roadmap: ["Next.js App Router & Server Actions", "TypeScript for Enterprise Apps", "SQL & NoSQL Database Design"],
-          resources: [{ title: "Next.js Learn Path", url: "https://nextjs.org/learn" }, { title: "Prisma Documentation", url: "https://www.prisma.io/docs" }, { title: "System Design Primer", url: "https://github.com/donnemartin/system-design-primer" }]
+          role: "Fullstack Next.js Architect",
+          roadmap: ["Next.js App Router & Server Actions", "PostgreSQL & Prisma ORM", "System Design & Scalability"],
+          resources: [
+            { title: "Next.js Dashboard Tutorial", url: "https://nextjs.org/learn" },
+            { title: "Full Stack Open (Helsinki University)", url: "https://fullstackopen.com/en/" },
+            { title: "System Design Primer", url: "https://github.com/donnemartin/system-design-primer" }
+          ]
         }
       },
       "AI & ML": {
         "Beginner": {
-          role: "Data Science Aspirant",
-          roadmap: ["Python for Data Analysis", "Basic Statistics & Probability", "Numpy & Pandas Fundamentals"],
-          resources: [{ title: "Kaggle Python Course", url: "https://www.kaggle.com/learn/python" }, { title: "Google ML Crash Course", url: "https://developers.google.com/machine-learning/crash-course" }, { title: "3Blue1Brown Neural Networks", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" }]
+          role: "AI Aspirant",
+          roadmap: ["Python for Data Science", "Linear Algebra & Statistics", "NumPy & Pandas"],
+          resources: [
+            { title: "Kaggle - Python for Data Science", url: "https://www.kaggle.com/learn/python" },
+            { title: "3Blue1Brown - Essence of Linear Algebra", url: "https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab" },
+            { title: "Pandas Documentation Tutorials", url: "https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html" }
+          ]
         },
         "Intermediate": {
           role: "Machine Learning Engineer",
-          roadmap: ["Supervised & Unsupervised Learning", "Scikit-Learn Feature Engineering", "Deep Learning with Neural Networks"],
-          resources: [{ title: "Fast.ai Practical Deep Learning", url: "https://www.fast.ai" }, { title: "Andrew Ng ML Specialization", url: "https://www.coursera.org/specializations/machine-learning-introduction" }, { title: "PyTorch Official Tutorials", url: "https://pytorch.org/tutorials" }]
+          roadmap: ["Supervised & Unsupervised Learning", "Neural Network Fundamentals", "Scikit-Learn Projects"],
+          resources: [
+            { title: "Andrew Ng - Machine Learning (Coursera Audit)", url: "https://www.coursera.org/specializations/machine-learning-introduction" },
+            { title: "Google ML Crash Course", url: "https://developers.google.com/machine-learning/crash-course" },
+            { title: "Fast.ai - Practical Deep Learning", url: "https://www.fast.ai/" }
+          ]
         },
         "Advanced": {
-          role: "AI Research Scientist",
-          roadmap: ["Transformer Architectures", "Fine-tuning LLMs & RAG", "MLOps & Model Deployment"],
-          resources: [{ title: "Hugging Face Course", url: "https://huggingface.co/learn" }, { title: "DeepLearning.AI Short Courses", url: "https://www.deeplearning.ai/short-courses/" }, { title: "Stanford CS224N (NLP)", url: "https://web.stanford.edu/class/cs224n/" }]
+          role: "Deep Learning Specialist",
+          roadmap: ["Transformers & LLMs", "Fine-tuning Models", "MLOps Pipelines"],
+          resources: [
+            { title: "Hugging Face Course", url: "https://huggingface.co/learn" },
+            { title: "DeepLearning.AI Short Courses", url: "https://www.deeplearning.ai/short-courses/" },
+            { title: "PyTorch Official Tutorials", url: "https://pytorch.org/tutorials/" }
+          ]
         }
       },
       "Cyber Security": {
         "Beginner": {
           role: "Security Technician",
-          roadmap: ["Network Protocols (TCP/IP)", "Linux Command Line Basics", "Intro to Hacking Ethics"],
-          resources: [{ title: "TryHackMe Pre-Security", url: "https://tryhackme.com" }, { title: "Cisco Skills For All", url: "https://skillsforall.com" }, { title: "OverTheWire Wargames", url: "https://overthewire.org" }]
+          roadmap: ["Networking Basics (TCP/IP)", "Linux CLI Basics", "Security Principles"],
+          resources: [
+            { title: "Cisco Networking Academy (Free)", url: "https://www.skillsforall.com/" },
+            { title: "Linux Journey", url: "https://linuxjourney.com/" },
+            { title: "TryHackMe Pre-Security Path", url: "https://tryhackme.com/path/outline/presecurity" }
+          ]
         },
         "Intermediate": {
-          role: "SOC Analyst / Pentester",
-          roadmap: ["Web Application Penetration Testing", "Network Traffic Analysis", "Incident Response Basics"],
-          resources: [{ title: "PortSwigger Web Academy", url: "https://portswigger.net/web-security" }, { title: "Hack The Box Academy", url: "https://academy.hackthebox.com" }, { title: "OWASP Top 10 Guides", url: "https://owasp.org" }]
+          role: "Pentester / SOC Analyst",
+          roadmap: ["Web App Security (OWASP)", "Network Traffic Analysis", "Metasploit Fundamentals"],
+          resources: [
+            { title: "PortSwigger Web Security Academy", url: "https://portswigger.net/web-security" },
+            { title: "Hack The Box Academy", url: "https://academy.hackthebox.com/" },
+            { title: "OWASP Top Ten Project", url: "https://owasp.org/www-project-top-ten/" }
+          ]
         },
         "Advanced": {
           role: "Security Architect",
-          roadmap: ["Cloud Security Mastery", "Advanced Malware Analysis", "Compliance & Risk Management"],
-          resources: [{ title: "SANS Cyber Aces", url: "https://www.cyberaces.org" }, { title: "Metasploit Unleashed", url: "https://www.offsec.com/metasploit-unleashed/" }, { title: "MIT Security Course", url: "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/" }]
+          roadmap: ["Cloud Security Mastery", "Advanced Malware Analysis", "Incident Response"],
+          resources: [
+            { title: "SANS Cyber Aces Online", url: "https://www.cyberaces.org/" },
+            { title: "Metasploit Unleashed", url: "https://www.offsec.com/metasploit-unleashed/" },
+            { title: "MIT Computer Systems Security", url: "https://ocw.mit.edu/courses/6-858-computer-systems-security-fall-2014/" }
+          ]
         }
       },
       "Data Science": {
         "Beginner": {
           role: "Junior Data Analyst",
           roadmap: ["Excel & SQL Basics", "Data Cleaning with Python", "Descriptive Statistics"],
-          resources: [{ title: "SQLZoo Interactive", url: "https://sqlzoo.net" }, { title: "Mode SQL Tutorial", url: "https://mode.com/sql-tutorial/" }, { title: "Pandas Intro", url: "https://pandas.pydata.org/docs/" }]
+          resources: [
+            { title: "SQLZoo Interactive SQL", url: "https://sqlzoo.net/" },
+            { title: "Mode Analytics SQL Tutorial", url: "https://mode.com/sql-tutorial/" },
+            { title: "DataCamp Free Intro Courses", url: "https://www.datacamp.com/courses/free-introduction-to-r" }
+          ]
         },
         "Intermediate": {
           role: "Data Scientist",
-          roadmap: ["Exploratory Data Analysis (EDA)", "Inferential Statistics", "Data Visualization (Seaborn)"],
-          resources: [{ title: "Harvard CS109 Data Science", url: "http://cs109.github.io/2015/" }, { title: "Kaggle Data Vis", url: "https://www.kaggle.com/learn/data-visualization" }, { title: "StatQuest YouTube", url: "https://www.youtube.com/@statquest" }]
+          roadmap: ["Exploratory Data Analysis", "Inferential Statistics", "Data Visualization"],
+          resources: [
+            { title: "Harvard CS109 Data Science", url: "http://cs109.github.io/2015/" },
+            { title: "Kaggle - Data Visualization Course", url: "https://www.kaggle.com/learn/data-visualization" },
+            { title: "StatQuest - Statistics Fundamentals", url: "https://www.youtube.com/@statquest" }
+          ]
         },
         "Advanced": {
-          role: "Lead Data Scientist",
-          roadmap: ["Big Data Tools (Spark)", "Time Series Forecasting", "ML Pipeline Automation"],
-          resources: [{ title: "Spark by Examples", url: "https://sparkbyexamples.com" }, { title: "JHU Data Science (Audit)", url: "https://www.coursera.org/specializations/jhu-data-science" }, { title: "Airbnb Tech Blog", url: "https://medium.com/airbnb-engineering" }]
+          role: "Senior Data Scientist",
+          roadmap: ["Big Data (Spark)", "Time Series Analysis", "Automated Pipelines"],
+          resources: [
+            { title: "Spark by Examples", url: "https://sparkbyexamples.com/" },
+            { title: "JHU Data Science (Coursera Audit)", url: "https://www.coursera.org/specializations/jhu-data-science" },
+            { title: "Airbnb Data Engineering Blog", url: "https://medium.com/airbnb-engineering" }
+          ]
         }
       },
       "Cloud Computing": {
         "Beginner": {
           role: "Cloud Associate",
-          roadmap: ["Cloud Service Models (IaaS, PaaS)", "Basic Networking (DNS, DHCP)", "Linux Server Administration"],
-          resources: [{ title: "AWS Cloud Practitioner", url: "https://explore.skillbuilder.aws/" }, { title: "Google Cloud Skills Boost", url: "https://www.cloudskillsboost.google" }, { title: "Azure Fundamentals", url: "https://learn.microsoft.com/en-us/training/paths/az-900-power-platform-fundamentals/" }]
+          roadmap: ["Cloud Service Models", "Basic Virtualization", "Linux Admin"],
+          resources: [
+            { title: "AWS Cloud Practitioner Essentials", url: "https://explore.skillbuilder.aws/learn/course/external/view/elearning/134/aws-cloud-practitioner-essentials" },
+            { title: "Azure Fundamentals (AZ-900)", url: "https://learn.microsoft.com/en-us/training/paths/az-900-power-platform-fundamentals/" },
+            { title: "Google Cloud Skills Boost", url: "https://www.cloudskillsboost.google/" }
+          ]
         },
         "Intermediate": {
           role: "Cloud Engineer",
-          roadmap: ["Compute & Storage (EC2, S3)", "Virtual Private Clouds (VPC)", "Serverless Basics (Lambda)"],
-          resources: [{ title: "FreeCodeCamp AWS Solution Architect", url: "https://www.youtube.com/watch?v=Ia-UEYYR44s" }, { title: "Azure Docs", url: "https://learn.microsoft.com/en-us/azure/" }, { title: "Cloud Guru (Free Tier)", url: "https://www.pluralsight.com/cloud-guru" }]
+          roadmap: ["EC2, S3, & VPC Basics", "Identity & Access (IAM)", "Serverless Intro"],
+          resources: [
+            { title: "FreeCodeCamp - AWS Solutions Architect", url: "https://www.youtube.com/watch?v=Ia-UEYYR44s" },
+            { title: "A Cloud Guru (Free Tier)", url: "https://www.pluralsight.com/cloud-guru" },
+            { title: "DigitalOcean Community Tutorials", url: "https://www.digitalocean.com/community/tutorials" }
+          ]
         },
         "Advanced": {
-          role: "Solutions Architect",
-          roadmap: ["Infrastructure as Code (Terraform)", "Multi-Cloud Strategy", "High Availability & Scalability"],
-          resources: [{ title: "Terraform Tutorials", url: "https://developer.hashicorp.com/terraform/tutorials" }, { title: "CNCF Landscape", url: "https://www.cncf.io" }, { title: "AWS Architecture Center", url: "https://aws.amazon.com/architecture/" }]
+          role: "Cloud Solutions Architect",
+          roadmap: ["Infrastructure as Code (Terraform)", "Multi-Cloud Strategy", "Disaster Recovery"],
+          resources: [
+            { title: "Terraform Official Tutorials", url: "https://developer.hashicorp.com/terraform/tutorials" },
+            { title: "CNCF Cloud Native Landscape", url: "https://landscape.cncf.io/" },
+            { title: "AWS Architecture Center", url: "https://aws.amazon.com/architecture/" }
+          ]
         }
       },
       "DevOps": {
         "Beginner": {
           role: "Junior DevOps",
-          roadmap: ["Git & Version Control", "Linux Systems Admin", "Scripting with Bash/Python"],
-          resources: [{ title: "Linux Journey", url: "https://linuxjourney.com" }, { title: "Git Immersion", url: "https://gitimmersion.com" }, { title: "DevOps Roadmap", url: "https://roadmap.sh/devops" }]
+          roadmap: ["Linux Systems & Shell", "Git Workflow", "Networking Basics"],
+          resources: [
+            { title: "Linux Journey - Command Line", url: "https://linuxjourney.com/" },
+            { title: "Git Immersion", url: "https://gitimmersion.com/" },
+            { title: "DevOps Roadmap Visual Guide", url: "https://roadmap.sh/devops" }
+          ]
         },
         "Intermediate": {
-          role: "SRE (Site Reliability Engineer)",
-          roadmap: ["Docker & Containerization", "CI/CD Pipelines (Jenkins/GitHub Actions)", "Monitoring & Logging (ELK)"],
-          resources: [{ title: "Docker Labs", url: "https://training.play-with-docker.com" }, { title: "Kubernetes Tutorials", url: "https://kubernetes.io/docs/tutorials/" }, { title: "TechWorld with Nana", url: "https://www.youtube.com/@TechWorldwithNana" }]
+          role: "SRE / DevOps Engineer",
+          roadmap: ["Docker Containerization", "CI/CD Pipelines", "Monitoring & Logging"],
+          resources: [
+            { title: "Docker Play-with-Docker Labs", url: "https://training.play-with-docker.com/" },
+            { title: "TechWorld with Nana (YouTube)", url: "https://www.youtube.com/@TechWorldwithNana" },
+            { title: "Jenkins User Documentation", url: "https://www.jenkins.io/doc/" }
+          ]
         },
         "Advanced": {
           role: "DevOps Architect",
-          roadmap: ["Kubernetes Management", "DevSecOps Integration", "Automated Scalability Patterns"],
-          resources: [{ title: "Google SRE Book", url: "https://sre.google/sre-book/table-of-contents/" }, { title: "ArgoCD Docs", url: "https://argo-cd.readthedocs.io" }, { title: "Chaos Engineering Guide", url: "https://www.gremlin.com/community/tutorials/chaos-engineering-the-full-guide/" }]
+          roadmap: ["Kubernetes Management", "Infrastructure as Code", "DevSecOps"],
+          resources: [
+            { title: "Kubernetes Interactive Tutorials", url: "https://kubernetes.io/docs/tutorials/kubernetes-basics/" },
+            { title: "Google SRE Books (Free)", url: "https://sre.google/sre-book/table-of-contents/" },
+            { title: "Chaos Engineering Guide", url: "https://www.gremlin.com/community/tutorials/chaos-engineering-the-full-guide/" }
+          ]
         }
       },
       "Mobile App Development": {
         "Beginner": {
-          role: "Junior Mobile Developer",
-          roadmap: ["UI Design Basics", "Programming Logic (Dart/Kotlin)", "Building Basic Screens"],
-          resources: [{ title: "Android Basics (Kotlin)", url: "https://developer.android.com/courses/android-basics-kotlin/course" }, { title: "Flutter Foundations", url: "https://docs.flutter.dev/get-started/learn-more" }, { title: "Swift Playgrounds", url: "https://www.apple.com/swift/playgrounds/" }]
+          role: "Junior Mobile Dev",
+          roadmap: ["Logic (Dart/Kotlin)", "UI Layout Basics", "Build First Screen"],
+          resources: [
+            { title: "Flutter Get Started Docs", url: "https://docs.flutter.dev/get-started/learn-more" },
+            { title: "Android Basics in Kotlin", url: "https://developer.android.com/courses/android-basics-kotlin/course" },
+            { title: "Swift Playgrounds", url: "https://www.apple.com/swift/playgrounds/" }
+          ]
         },
         "Intermediate": {
           role: "Mobile App Engineer",
-          roadmap: ["State Management (Bloc/Provider)", "REST API Consumption", "Local Data Persistence (SQLite)"],
-          resources: [{ title: "Flutter Codelabs", url: "https://codelabs.developers.google.com/?cat=Flutter" }, { title: "React Native Docs", url: "https://reactnative.dev/docs/getting-started" }, { title: "Firebase for Mobile", url: "https://firebase.google.com/docs/mobile/android" }]
+          roadmap: ["State Management", "API Consumption", "Local Storage (SQLite)"],
+          resources: [
+            { title: "React Native Official Docs", url: "https://reactnative.dev/docs/getting-started" },
+            { title: "Firebase for Mobile (Codelabs)", url: "https://firebase.google.com/codelabs/firebase-android" },
+            { title: "Flutter Codelabs (Google Builders)", url: "https://codelabs.developers.google.com/?cat=Flutter" }
+          ]
         },
         "Advanced": {
           role: "Senior Mobile Architect",
-          roadmap: ["Native Platform Integration", "CI/CD for Mobile", "Performance Optimization"],
-          resources: [{ title: "Mobile DevOps (Bitrise)", url: "https://blog.bitrise.io" }, { title: "Point-Free Swift", url: "https://www.pointfree.co" }, { title: "Dart Design Patterns", url: "https://dart-design-patterns.com" }]
+          roadmap: ["Native Platform Integration", "CI/CD for Mobile", "Performance Tuning"],
+          resources: [
+            { title: "Bitrise Mobile DevOps Blog", url: "https://blog.bitrise.io/" },
+            { title: "Point-Free - Advanced Swift", url: "https://www.pointfree.co/" },
+            { title: "Dart Advanced Design Patterns", url: "https://dart-design-patterns.com/" }
+          ]
         }
       },
       "Game Development": {
         "Beginner": {
           role: "Junior Game Dev",
-          roadmap: ["C# Programming for Unity", "2D Physics & Movement", "Game Loop Fundamentals"],
-          resources: [{ title: "Unity Learn", url: "https://learn.unity.com" }, { title: "Brackeys Archive", url: "https://www.youtube.com/@Brackeys" }, { title: "GDQuest Godot", url: "https://www.gdquest.com" }]
+          roadmap: ["C# for Unity", "2D Physics & Movement", "Game Loop Fundamentals"],
+          resources: [
+            { title: "Unity Learn - Junior Programmer", url: "https://learn.unity.com/pathway/junior-programmer" },
+            { title: "Brackeys Game Dev Archive", url: "https://www.youtube.com/@Brackeys" },
+            { title: "GDQuest - Godot Engine Intro", url: "https://www.gdquest.com/tutorial/godot/learning-paths/getting-started-2021/" }
+          ]
         },
         "Intermediate": {
           role: "Game Programmer",
-          roadmap: ["3D Math & Shaders", "AI & Pathfinding", "Optimization for PC/Mobile"],
-          resources: [{ title: "Unreal Learning", url: "https://dev.epicgames.com/community/learning" }, { title: "Catlike Coding", url: "https://catlikecoding.com/unity/tutorials/" }, { title: "The Book of Shaders", url: "https://thebookofshaders.com" }]
+          roadmap: ["3D Math & Shaders", "AI Pathfinding", "Mobile Optimization"],
+          resources: [
+            { title: "Unreal Engine Learning Path", url: "https://dev.epicgames.com/community/learning" },
+            { title: "Catlike Coding - C# Tutorials", url: "https://catlikecoding.com/unity/tutorials/" },
+            { title: "Unity 3D Game Design Tutorials", url: "https://learn.unity.com/pathway/unity-essentials" }
+          ]
         },
         "Advanced": {
-          role: "Technical Artist / Lead Dev",
-          roadmap: ["Multiplayer Networking", "Procedural Generation", "Advanced Graphics Pipelines"],
-          resources: [{ title: "Inigo Quilez Graphics", url: "https://www.iquilezles.org/" }, { title: "Valve Developer Wiki", url: "https://developer.valvesoftware.com/wiki/Main_Page" }, { title: "Unity Architecture Patterns", url: "https://github.com/Habrador/Unity-Programming-Patterns" }]
+          role: "Lead Game Developer",
+          roadmap: ["Multiplayer Networking", "Procedural Generation", "Graphics Pipeline"],
+          resources: [
+            { title: "Inigo Quilez - Computer Graphics", url: "https://www.iquilezles.org/www/index.htm" },
+            { title: "The Book of Shaders", url: "https://thebookofshaders.com/" },
+            { title: "Unity Programming Patterns", url: "https://github.com/Habrador/Unity-Programming-Patterns" }
+          ]
         }
       },
       "UI / UX Design": {
         "Beginner": {
-          role: "Junior UX Designer",
-          roadmap: ["Design Principles (Color/Type)", "Intro to Figma", "User Research Basics"],
-          resources: [{ title: "Google UX Cert (Audit)", url: "https://www.coursera.org/professional-certificates/google-ux-design" }, { title: "Figma Beginners Guide", url: "https://help.figma.com/hc/en-us/sections/360002051613-Learn-Figma" }, { title: "UX Collective", url: "https://uxdesign.cc" }]
+          role: "Junior Designer",
+          roadmap: ["Design Principles", "Figma Basics", "User Research Intro"],
+          resources: [
+            { title: "Google UX Design Professional Cert (Audit)", url: "https://www.coursera.org/professional-certificates/google-ux-design" },
+            { title: "Figma for Beginners Tutorials", url: "https://help.figma.com/hc/en-us/categories/360002051613-Learn-Figma" },
+            { title: "UX Collective - Design Principles", url: "https://uxdesign.cc/" }
+          ]
         },
         "Intermediate": {
           role: "Product Designer",
-          roadmap: ["High-Fidelity Prototyping", "Design Systems", "Usability Testing Methods"],
-          resources: [{ title: "Laws of UX", url: "https://lawsofux.com" }, { title: "DesignCourse YouTube", url: "https://www.youtube.com/@DesignCourse" }, { title: "Interaction Design Foundation", url: "https://www.interaction-design.org/" }]
+          roadmap: ["High-Fidelity Prototyping", "Design Systems", "Usability Testing"],
+          resources: [
+            { title: "Laws of UX", url: "https://lawsofux.com/" },
+            { title: "DesignCourse - UI Design Mastery", url: "https://www.youtube.com/@DesignCourse" },
+            { title: "Interaction Design Foundation (Free Articles)", url: "https://www.interaction-design.org/literature" }
+          ]
         },
         "Advanced": {
           role: "Lead Product Designer",
-          roadmap: ["UX Strategy & Business", "Advanced Micro-interactions", "Design Leadership"],
-          resources: [{ title: "NN/g Articles", url: "https://www.nngroup.com/articles/" }, { title: "Case Study Club", url: "https://www.casestudy.club" }, { title: "InVision Design Engineering", url: "https://www.invisionapp.com/inside-design/design-engineering/" }]
+          roadmap: ["UX Strategy", "Micro-interactions", "Design Leadership"],
+          resources: [
+            { title: "NN/g - Nielsen Norman Articles", url: "https://www.nngroup.com/articles/" },
+            { title: "Case Study Club", url: "https://www.casestudy.club/" },
+            { title: "InVision Design Engineering", url: "https://www.invisionapp.com/inside-design/design-engineering/" }
+          ]
         }
       }
     };
@@ -168,9 +276,9 @@ export async function POST(req: Request) {
     }
 
     return NextResponse.json({
-      role: `${level} ${interest || "Technology"} Specialist`,
-      roadmap: ["Master the fundamentals", "Build hands-on projects", "Stay updated with industry trends"],
-      resources: [{ title: "General Learning (Class Central)", url: "https://www.classcentral.com" }]
+      role: `${level} ${interest || "Tech"} Specialist`,
+      roadmap: ["Master the fundamentals", "Build hands-on projects", "Connect with industry mentors"],
+      resources: [{ title: "General Learning (Class Central)", url: "https://www.classcentral.com/" }]
     });
 
   } catch (error) {
